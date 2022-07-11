@@ -85,4 +85,11 @@ function getTriviaData() {
 
 }
 
-generateBtn3.addEventListener("click", getTriviaData);  
+generateBtn3.addEventListener("click", getTriviaData);
+
+var excuseFav = document.getElementById('fvr-excuse')
+excuseFav.addEventListener("click", function () {
+  var favorites = document.getElementById('excuse').innerText;
+  console.log(favorites)
+  localStorage.setItem('favorites', JSON.stringify(favorites));
+});
