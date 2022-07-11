@@ -6,35 +6,45 @@
 <link rel="stylesheet" href="materialize/css/materialize.min.css">
 <link rel="stylesheet" href="CSS/style.css" />
 
-<body>
+<body class="grey">
   <header class="Header-container">
-    <h1 class="bg-yellow-200 text-purple-800 text-center p-15 text-4xl font-extrabold">PlaceHolder Title</h1>
+    <h1 class="green accent-2 red-text center-align">PlaceHolder Title</h1>
   </header>
-  <div class="container flex flex-row justify-center absolute inset-x-0 bottom-0">
-    <div id="excuse-API" class="m-5">
+
+  <div id="genContainer">
+    <div id="generated" class="center-align ">Generated Content</div>
+  </div>
+
+  <div class="container row valign-wrapper">
+    <div id="excuse-API" class="">
       <div id="excuse"></div>
-      <button id="excuseBtn" class="bg-green-300">Generate an Excuse</button>
-      <button id="fvr-excuse" class="m-5 bg-green-300">Favorite</button>
+      <button id="excuseBtn" class="green accent-2">Generate an Excuse</button>
+      <button id="fvr-excuse" class="green accent-2">Favorite</button>
     </div>
 
-    <div id="trivia-API" class="m-5">
+    <div id="trivia-API" class="">
       <div id="question"></div>
-      <button id="triviaBtn" class="bg-green-300">Generate a Trivia Question</button>
-      <button id="fvr-trivia" class="m-5 bg-green-300">Favorite</button>
+      <button id="triviaBtn" class="green accent-2">Generate a Trivia Question</button>
+      <button id="fvr-trivia" class="green accent-2">Favorite</button>
     </div>
 
-    <div id="funfact-API" class="m-5">
+    <div id="funfact-API" class="">
       <div id="fact"></div>
-      <button id="funfactBtn" class="bg-green-300"> Generate a Fun Fact</button>
-      <button id="fvr-fact" class="m-5 bg-green-300">Favorite</button>
+      <button id="funfactBtn" class="green accent-2"> Generate a Fun Fact</button>
+      <button id="fvr-fact" class="green accent-2">Favorite</button>
     </div>
 
     <div id="pokeAPI" class="m-5">
       <div id="pokemon"></div>
-      <button id="pokeBtn" class="bg-green-300">Generate a Pokemon</button>
-      <button id="fvr-poke" class="m-5 bg-green-300">Favorite</button>
+      <button id="pokeBtn" class="green accent-2">Generate a Pokemon</button>
+      <button id="fvr-poke" class="green accent-2">Favorite</button>
+    </div>
+
+    <div id="allFav" class="">
+      <button id="favBtn" class="green accent-2">Saved Favorites</button>
     </div>
   </div>
+  
   <script src="materialize\js\materialize.min.js"></script>
   <script src="./JS/script.js"></script>
 </body>

@@ -1,0 +1,29 @@
+header {
+  top: 0%;
+}
+
+.container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#genContainer {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  right: 50%;
+}
+
+#excuse-API, #trivia-API, #funfact-API, #pokeAPI, #allFav{
+  margin: 15px;
+}
+
+#excuseBtn, #fvr-excuse, #triviaBtn, #fvr-trivia, #funfactBtn, #fvr-fact, #pokeBtn, #fvr-poke, #favBtn {
+  margin: 2.5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
