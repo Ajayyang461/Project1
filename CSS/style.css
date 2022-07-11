@@ -1,24 +1,29 @@
-header {
-  top: 0%;
-}
 
 .container {
-  position: absolute;
+  display: flex;
   bottom: 0;
   left: 0;
   right: 0;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
-#genContainer {
+/* #genContainer {
   position: absolute;
   top: 50%;
   bottom: 50%;
   left: 50%;
   right: 50%;
-}
+} */
 
-#excuse-API, #trivia-API, #funfact-API, #pokeAPI, #allFav{
-  margin: 15px;
+#excuse-API, #trivia-API, #funfact-API, #pokeAPI {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  max-width: 20%;
+  border-style: solid;
+  padding: 15px;
+  background-color: rgb(168, 104, 197);
 }
 
 #excuseBtn, #fvr-excuse, #triviaBtn, #fvr-trivia, #funfactBtn, #fvr-fact, #pokeBtn, #fvr-poke, #favBtn {
@@ -27,3 +32,10 @@ header {
   font-weight: bold;
 }
 
+#excuse, #question, #fact, #pokemon {
+  margin: 20px;
+}
+
+#allFav {
+  display: flex;
+}

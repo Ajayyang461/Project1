@@ -11,40 +11,85 @@
     <h1 class="green accent-2 red-text center-align">PlaceHolder Title</h1>
   </header>
 
-  <div id="genContainer">
+  <!-- <div id="genContainer">
     <div id="generated" class="center-align ">Generated Content</div>
-  </div>
+  </div> -->
 
   <div class="container row valign-wrapper">
     <div id="excuse-API" class="">
-      <div id="excuse"></div>
-      <button id="excuseBtn" class="green accent-2">Generate an Excuse</button>
-      <button id="fvr-excuse" class="green accent-2">Favorite</button>
+      <div class="row">
+        <div class="col m12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title center-align">Excuses</span>
+              <div id="excuse"></div>
+            </div>
+            <div class="card-action">
+              <button id="excuseBtn" class="green accent-2">New Excuse</button>
+              <button id="fvr-excuse" class="green accent-2">Favorite</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="trivia-API" class="">
-      <div id="question"></div>
-      <button id="triviaBtn" class="green accent-2">Generate a Trivia Question</button>
-      <button id="fvr-trivia" class="green accent-2">Favorite</button>
+      <div class="row">
+        <div class="col m12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title center-align">Trivia</span>
+              <div id="question"></div>
+            </div>
+            <div class="card-action">
+              <button id="triviaBtn" class="green accent-2">New Trivia Question</button>
+              <button id="fvr-trivia" class="green accent-2">Favorite</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="funfact-API" class="">
-      <div id="fact"></div>
-      <button id="funfactBtn" class="green accent-2"> Generate a Fun Fact</button>
-      <button id="fvr-fact" class="green accent-2">Favorite</button>
+      <div class="row">
+        <div class="col m12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title center-align">Fun Facts</span>
+              <div id="fact"></div>
+            </div>
+            <div class="card-action">
+              <button id="funfactBtn" class="green accent-2"> New Fun Fact</button>
+              <button id="fvr-fact" class="green accent-2">Favorite</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="pokeAPI" class="m-5">
-      <div id="pokemon"></div>
-      <button id="pokeBtn" class="green accent-2">Generate a Pokemon</button>
-      <button id="fvr-poke" class="green accent-2">Favorite</button>
-    </div>
-
-    <div id="allFav" class="">
-      <button id="favBtn" class="green accent-2">Saved Favorites</button>
+      <div class="row">
+        <div class="col m12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title center-align">Pokemon</span>
+              <div id="pokemon"></div>
+            </div>
+            <div class="card-action">
+              <button id="pokeBtn" class="green accent-2">New Pokemon</button>
+              <button id="fvr-poke" class="green accent-2">Favorite</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  
+
+    <div id="allFav" class="modal-content">
+      <button id="favBtn" class="green accent-2">Saved Favorites</button>
+    </div>
+
+
   <script src="materialize\js\materialize.min.js"></script>
   <script src="./JS/script.js"></script>
 </body>
