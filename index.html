@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta char="UTF-8" />
-  <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
-  <title>MusicBangerzFinder</title>
-  <link href="/dist/output.css" rel="stylesheet" />
-  <link rel="stylesheet" href="CSS/style.css" />
+<meta char="UTF-8" />
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+<title>PlaceHolderTitle</title>
+<link href="./dist/output.css" rel="stylesheet" />
+<link rel="stylesheet" href="CSS/style.css" />
 
-  <body>
-    <header class="Header-container">
-      <h1 class="bg-yellow-200 text-purple-800">MusicBangerz</h1>
-    </header>
+<body>
+  <header class="Header-container">
+    <h1 class="bg-yellow-200 text-purple-800 text-center p-15 text-4xl font-extrabold">PlaceHolder Title</h1>
+  </header>
+  <div class="container flex flex-row justify-center absolute inset-x-0 bottom-0">
+    <div id="excuse-API" class="m-5">
+      <div id="excuse"></div>
+      <button id="excuseBtn" class="bg-green-300">Generate an Excuse</button>
+      <button id="fvr-excuse" class="m-5 bg-green-300">Favorite</button>
+    </div>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-  </body>
+    <div id="trivia-API" class="m-5">
+      <div id="question"></div>
+      <button id="triviaBtn" class="bg-green-300">Generate a Trivia Question</button>
+      <button id="fvr-trivia" class="m-5 bg-green-300">Favorite</button>
+    </div>
+
+    <div id="funfact-API" class="m-5">
+      <div id="fact"></div>
+      <button id="funfactBtn" class="bg-green-300"> Generate a Fun Fact</button>
+      <button id="fvr-fact" class="m-5 bg-green-300">Favorite</button>
+    </div>
+
+    <div id="pokeAPI" class="m-5">
+      <div id="pokemon"></div>
+      <button id="pokeBtn" class="bg-green-300">Generate a Pokemon</button>
+      <button id="fvr-poke" class="m-5 bg-green-300">Favorite</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+
+  </style>
+  <script src="./JS/script.js"></script>
+</body>
+
 </html>
