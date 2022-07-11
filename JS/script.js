@@ -9,7 +9,7 @@
 //     console.error(err);
 //   });
 
-
+var generateBtn = document.querySelector("#funfactBtn");
 function getFunFactData() {
   fetch("https://asli-fun-fact-api.herokuapp.com/")
     .then(function (res) {
@@ -19,14 +19,17 @@ function getFunFactData() {
       var funFact = data.data.fact
       var funFactEl = document.querySelector('#fact')
       funFactEl.innerText = `Fun Fact: ${funFact}`
-      console.log(data.data.fact)
+      // console.log(data.data.fact)
     })
 
 }
-getFunFactData()
 
 
+// // Add event listener to generate button
+generateBtn.addEventListener("click", getFunFactData);
 
+
+var generateBtn1 = document.querySelector("#pokeBtn");
 function getPokemonData() {
   fetch("https://pokeapi.co/api/v2/pokemon/")
     .then(function (res) {
@@ -35,7 +38,6 @@ function getPokemonData() {
     .then(function (data) {
       var poke = JSON.stringify(data.results[19].name)
       var pokeEl = document.querySelector('#pokemon')
-      
       // console.log(data.results[19].name)
       var random = data.results[Math.floor(Math.random()*data.results.length)];
       pokeEl.innerText = `Pokemon: ${random.name}`
@@ -44,11 +46,11 @@ function getPokemonData() {
     })
 
 }
-
-getPokemonData();
-
+generateBtn1.addEventListener("click", getPokemonData);
 
 
+
+var generateBtn2 = document.querySelector("#excuseBtn");
 function getExcuseData() {
   fetch("https://excuser.herokuapp.com/v1/excuse/college/4")
     .then(function (res) {
@@ -63,10 +65,10 @@ function getExcuseData() {
 
 }
 
-getExcuseData();
+generateBtn2.addEventListener("click", getExcuseData);
 
 
-
+var generateBtn3 = document.querySelector("#triviaBtn");
 function getTriviaData() {
   fetch("https://the-trivia-api.com/api/questions?limit=20")
     .then(function (res) {
@@ -83,4 +85,4 @@ function getTriviaData() {
 
 }
 
-getTriviaData();      
+generateBtn3.addEventListener("click", getTriviaData);  
