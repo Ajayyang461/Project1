@@ -1,3 +1,11 @@
+*
+
+h1 {
+  box-shadow: 5px 15px 30px rgb(34, 212, 243) inset;
+  border-style: ridge;
+  border-color: black;
+  border-width: 6px;
+}
 
 .container {
   display: flex;
@@ -8,28 +16,26 @@
   justify-content: space-evenly;
 }
 
-/* #genContainer {
-  position: absolute;
-  top: 50%;
-  bottom: 50%;
-  left: 50%;
-  right: 50%;
-} */
-
 #excuse-API, #trivia-API, #funfact-API, #pokeAPI {
   display: flex;
   justify-content: center;
   margin: 20px;
   width: 350px;
   border-style: solid;
+  border-width: 6px;
   padding: 15px;
   background-color: rgb(168, 104, 197);
+  box-shadow: 3px 10px 40px red inset;
 }
 
 #excuseBtn, #fvr-excuse, #triviaBtn, #fvr-trivia, #funfactBtn, #fvr-fact, #pokeBtn, #fvr-poke, #favBtn {
   margin: 2.5px;
   cursor: pointer;
   font-weight: bold;
+  border-style: solid;
+  border-width: 3px;
+  background-color: #69F0AE;
+  box-shadow: 10px 5px 15px rgb(34, 212, 243) inset !important;
 }
 
 #excuse, #question, #fact, #pokemon {
@@ -44,11 +50,23 @@
   width: 250px;
 }
 
+.card-title {
+  color: black;
+  font-weight: bold !important;
+  text-decoration: underline;
+}
+
 #favContainer {
   display: flex;
   justify-content: center;
 }
 
-#favBtn {
+.modal-trigger {
+  justify-content: center;
   font-size: x-large;
+  background-color: #69F0AE;
+  box-shadow: 5px 10px 15px rgb(34, 212, 243) inset !important;
+  border-style: solid;
+  border-width: 3px;
+  color: black;
 }
