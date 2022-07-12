@@ -87,13 +87,14 @@
 
   <section id="favContainer">
     <!-- Modal Trigger -->
-    <a class="waves-effect waves-light btn modal-trigger green accent-2" href="#modal1">Favorites</a>
-  
+    <button data-target="modal1" id="modal2" class="btn modal-trigger">Favorites</button>
+
+
     <!-- Modal Structure -->
-    <div id="modal1" class="modal">
+    <div id="modalFav" class="modal">
       <div class="modal-content">
         <h4>Favorites List</h4>
-        <p class="favItems"></p>
+        <p id="favList" class="favItems"></p>
       </div>
       <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
