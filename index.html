@@ -6,9 +6,9 @@
 <link rel="stylesheet" href="materialize/css/materialize.min.css">
 <link rel="stylesheet" href="CSS/style.css" />
 
-<body class="grey">
-  <header class="Header-container">
-    <h1 class="green accent-2 red-text center-align">PlaceHolder Title</h1>
+<body class="grey darken-3">
+  <header class="header-container">
+    <h1 class="green accent-2 black-text center-align">PlaceHolder Title</h1>
   </header>
 
   <!-- <div id="genContainer">
@@ -86,8 +86,18 @@
   </div>
 
   <section id="favContainer">
-    <div id="allFav" class="modal-content">
-      <button id="favBtn" class="green accent-2">Saved Favorites</button>
+    <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger green accent-2" href="#modal1">Favorites</a>
+  
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Favorites List</h4>
+        <p class="favItems"></p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
     </div>
   </section>
 
