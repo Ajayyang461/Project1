@@ -6,27 +6,23 @@
 <link rel="stylesheet" href="materialize/css/materialize.min.css">
 <link rel="stylesheet" href="CSS/style.css" />
 
-<body class="grey darken-3">
+<body>
   <header class="header-container">
     <h1 class="green accent-2 black-text center-align">PlaceHolder Title</h1>
   </header>
-
-  <!-- <div id="genContainer">
-    <div id="generated" class="center-align ">Generated Content</div>
-  </div> -->
 
   <div class="container row valign-wrapper">
     <div id="excuse-API" class="">
       <div class="row">
         <div class="col m12 m6">
-          <div class="card medium blue-grey darken-1">
-            <div class="card-content white-text">
+          <div class="card medium">
+            <div class="card-content black-text">
               <span class="card-title center-align">Excuses</span>
               <div id="excuse"></div>
             </div>
             <div class="card-action">
-              <button id="excuseBtn" class="green accent-2">New Excuse</button>
-              <button id="fvr-excuse" class="green accent-2">Favorite</button>
+              <button id="excuseBtn" class="green accent-2 waves-effect waves-purple">New Excuse</button>
+              <button id="fvr-excuse" class="green accent-2 waves-effect waves-purple">Favorite</button>
             </div>
           </div>
         </div>
@@ -36,14 +32,14 @@
     <div id="trivia-API" class="">
       <div class="row">
         <div class="col m12 m6">
-          <div class="card medium blue-grey darken-1">
-            <div class="card-content white-text">
+          <div class="card medium">
+            <div class="card-content black-text">
               <span class="card-title center-align">Trivia</span>
               <div id="question"></div>
             </div>
             <div class="card-action">
-              <button id="triviaBtn" class="green accent-2">New Trivia</button>
-              <button id="fvr-trivia" class="green accent-2">Favorite</button>
+              <button id="triviaBtn" class="green accent-2 waves-effect waves-purple">New Trivia</button>
+              <button id="fvr-trivia" class="green accent-2 waves-effect waves-purple">Favorite</button>
             </div>
           </div>
         </div>
@@ -53,14 +49,14 @@
     <div id="funfact-API" class="">
       <div class="row">
         <div class="col m12 m6">
-          <div class="card medium blue-grey darken-1">
-            <div class="card-content white-text">
+          <div class="card medium">
+            <div class="card-content black-text">
               <span class="card-title center-align">Fun Facts</span>
               <div id="fact"></div>
             </div>
             <div class="card-action">
-              <button id="funfactBtn" class="green accent-2"> New Fun Fact</button>
-              <button id="fvr-fact" class="green accent-2">Favorite</button>
+              <button id="funfactBtn" class="green accent-2 waves-effect waves-purple"> New Fun Fact</button>
+              <button id="fvr-fact" class="green accent-2 waves-effect waves-purple">Favorite</button>
             </div>
           </div>
         </div>
@@ -70,14 +66,14 @@
     <div id="pokeAPI" class="m-5">
       <div class="row">
         <div class="col m12 m6">
-          <div class="card medium blue-grey darken-1">
-            <div class="card-content white-text">
+          <div class="card medium">
+            <div class="card-content black-text">
               <span class="card-title center-align">Pokemon</span>
               <div id="pokemon"></div>
             </div>
             <div class="card-action">
-              <button id="pokeBtn" class="green accent-2">Pokemon</button>
-              <button id="fvr-poke" class="green accent-2">Favorite</button>
+              <button id="pokeBtn" class="green accent-2 waves-effect waves-purple">Pokemon</button>
+              <button id="fvr-poke" class="green accent-2 waves-effect waves-purple">Favorite</button>
             </div>
           </div>
         </div>
@@ -87,9 +83,9 @@
 
   <section id="favContainer">
     <!-- Modal Trigger -->
-    <button data-target="modal1" id="modal2" class="btn modal-trigger">Favorites</button>
 
-
+    <button data-target="modal1" id="modal2" class="btn modal-trigger waves-effect waves-purple">Favorites</button>
+  
     <!-- Modal Structure -->
     <div id="modalFav" class="modal">
       <div class="modal-content">

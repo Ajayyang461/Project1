@@ -1,4 +1,7 @@
-*
+
+body {
+  background-color: darkslateblue;
+}
 
 h1 {
   box-shadow: 5px 15px 30px rgb(34, 212, 243) inset;
@@ -48,6 +51,7 @@ h1 {
 
 .card {
   width: 250px;
+  background: rgb(173, 112, 185);
 }
 
 .card-title {
@@ -56,14 +60,20 @@ h1 {
   text-decoration: underline;
 }
 
+.card-content {
+  font-weight: bold;
+}
+
 #favContainer {
   display: flex;
   justify-content: center;
+  margin: 80px;
 }
 
 .modal-trigger {
   justify-content: center;
   font-size: x-large;
+  font-weight: bold;
   background-color: #69F0AE;
   box-shadow: 5px 10px 15px rgb(34, 212, 243) inset !important;
   border-style: solid;
