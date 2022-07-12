@@ -9,6 +9,10 @@
 //     console.error(err);
 //   });
 
+
+
+
+
 var generateBtn = document.querySelector("#funfactBtn");
 function getFunFactData() {
   fetch("https://asli-fun-fact-api.herokuapp.com/")
@@ -39,7 +43,7 @@ function getPokemonData() {
       var poke = JSON.stringify(data.results[19].name)
       var pokeEl = document.querySelector('#pokemon')
       // console.log(data.results[19].name)
-      var random = data.results[Math.floor(Math.random()*data.results.length)];
+      var random = data.results[Math.floor(Math.random() * data.results.length)];
       pokeEl.innerText = `Pokemon: ${random.name}`
       console.log(random.name)
 
@@ -60,7 +64,6 @@ function getExcuseData() {
       var excuse = data[3].excuse
       var excuseEl = document.querySelector('#excuse')
       excuseEl.innerText = `Excuse: ${excuse}`
-      // console.log(data[3].excuse)
     })
 
 }
@@ -87,9 +90,3 @@ function getTriviaData() {
 
 generateBtn3.addEventListener("click", getTriviaData);
 
-var excuseFav = document.getElementById('fvr-excuse')
-excuseFav.addEventListener("click", function () {
-  var favorites = document.getElementById('excuse').innerText;
-  console.log(favorites)
-  localStorage.setItem('favorites', JSON.stringify(favorites));
-});
