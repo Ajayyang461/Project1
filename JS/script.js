@@ -1,14 +1,3 @@
-// fetch("http://www.boredapi.com/api/activity/")
-//   .then(function (res) {
-//     return res.json();
-//   })
-//   .then(function (data) {
-//     console.log(data)
-//   })
-//   .catch(function (err) {
-//     console.error(err);
-//   });
-
 var generateBtn = document.querySelector("#funfactBtn");
 function getFunFactData() {
   fetch("https://asli-fun-fact-api.herokuapp.com/")
@@ -61,7 +50,7 @@ function getExcuseData() {
       var excuseEl = document.querySelector('#excuse')
       excuseEl.innerText = `Excuse: ${excuse}`
     })
-    
+
 }
 
 generateBtn2.addEventListener("click", getExcuseData);
@@ -88,9 +77,9 @@ generateBtn3.addEventListener("click", getTriviaData);
 
 
 var favorites = [];
-  if (localStorage.getItem("favorites")) {
-    favorites = JSON.parse(localStorage.getItem("favorites"))
-  }
+if (localStorage.getItem("favorites")) {
+  favorites = JSON.parse(localStorage.getItem("favorites"))
+}
 
 var excuseFav = document.getElementById('fvr-excuse')
 var triviaFav = document.getElementById('fvr-trivia')
@@ -132,3 +121,30 @@ funFactFav.addEventListener("click", function () {
   favorites.push(funFactText);
   localStorage.setItem("favorites", JSON.stringify(favorites));
 });
+
+// Modal function
+var modalBtn = document.getElementById('modal2')
+var modalFav = document.getElementById('modalFav')
+var favList = document.getElementById('favList')
+
+modalBtn.addEventListener("click", event => {
+  for (let i = 0; i < favorites.length; i++) {
+    favList.innerText = `${favorites[i]}`
+    console.log(favorites[i].length)
+  }
+  modalFav.style.display = 'block';
+  console.log("working onclick")
+});
+
+var closeModal = document.getElementsByClassName("modal-footer")[0];
+closeModal.onclick = function () {
+  modalFav.style.display = "none";
+  console.log("working")
+}
+
+// window.onclick = function (event) {
+//     if (event.target == modalFav) {
+//         modalFav.style.display = 'none';
+//     }
+//     console.log("window onclick working")
+// }
