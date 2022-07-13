@@ -128,8 +128,9 @@ var modalFav = document.getElementById('modalFav')
 var favList = document.getElementById('favList')
 
 modalBtn.addEventListener("click", event => {
+  favList.innerText = "";
   for (let i = 0; i < favorites.length; i++) {
-    favList.innerText = `${favorites[i]}`
+    favList.insertAdjacentHTML("beforeend", `<li>${favorites[i]}</li>`)
     console.log(favorites[i].length)
   }
   modalFav.style.display = 'block';
