@@ -8,94 +8,93 @@
 
 <body>
   <header class="header-container">
-    <h1 class="green accent-2 black-text center-align">PlaceHolder Title</h1>
+    <h1 class="green accent-2 black-text center-align">Chatter Portal!</h1>
+    <h4>A way in (or out!) of conversation!</h4>
   </header>
 
-  <div class="container row valign-wrapper">
-    <div id="excuse-API" class="">
-      <div class="row">
-        <div class="col m12 m6">
-          <div class="card medium">
-            <div class="card-content black-text">
+  <main class="container row valign-wrapper">
+    <section id="excuse-API" class="">
+      <section class="row">
+        <section class="col m12 m6">
+          <section class="card medium">
+            <section class="card-content black-text">
               <span class="card-title center-align">Excuses</span>
-              <div id="excuse"></div>
-            </div>
-            <div class="card-action">
+              <article id="excuse"></article>
+            </section>
+            <section class="card-action">
               <button id="excuseBtn" class="green accent-2 waves-effect waves-purple">New Excuse</button>
               <button id="fvr-excuse" class="green accent-2 waves-effect waves-purple">Favorite</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
 
-    <div id="trivia-API" class="">
-      <div class="row">
-        <div class="col m12 m6">
-          <div class="card medium">
-            <div class="card-content black-text">
+    <section id="trivia-API" class="">
+      <section class="row">
+        <section class="col m12 m6">
+          <section class="card medium">
+            <section class="card-content black-text">
               <span class="card-title center-align">Trivia</span>
-              <div id="question"></div>
-            </div>
-            <div class="card-action">
+              <article id="question"></article>
+            </section>
+            <section class="card-action">
               <button id="triviaBtn" class="green accent-2 waves-effect waves-purple">New Trivia</button>
               <button id="fvr-trivia" class="green accent-2 waves-effect waves-purple">Favorite</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
 
-    <div id="funfact-API" class="">
-      <div class="row">
-        <div class="col m12 m6">
-          <div class="card medium">
-            <div class="card-content black-text">
+    <section id="funfact-API" class="">
+      <section class="row">
+        <section class="col m12 m6">
+          <section class="card medium">
+            <section class="card-content black-text">
               <span class="card-title center-align">Fun Facts</span>
-              <div id="fact"></div>
-            </div>
-            <div class="card-action">
-              <button id="funfactBtn" class="green accent-2 waves-effect waves-purple"> New Fun Fact</button>
+              <article id="fact"></article>
+            </section>
+            <section class="card-action">
+              <button id="funfactBtn" class="green accent-2 waves-effect waves-purple">New Fun Fact</button>
               <button id="fvr-fact" class="green accent-2 waves-effect waves-purple">Favorite</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
 
-    <div id="pokeAPI" class="m-5">
-      <div class="row">
-        <div class="col m12 m6">
-          <div class="card medium">
-            <div class="card-content black-text">
+    <section id="pokeAPI" class="m-5">
+      <section class="row">
+        <section class="col m12 m6">
+          <section class="card medium">
+            <section class="card-content black-text">
               <span class="card-title center-align">Pokemon</span>
-              <div id="pokemon"></div>
-            </div>
-            <div class="card-action">
+              <article id="pokemon"></article>
+            </section>
+            <section class="card-action">
               <button id="pokeBtn" class="green accent-2 waves-effect waves-purple">Pokemon</button>
               <button id="fvr-poke" class="green accent-2 waves-effect waves-purple">Favorite</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+  </main>
 
   <section id="favContainer">
-    <!-- Modal Trigger -->
 
     <button data-target="modal1" id="modal2" class="btn modal-trigger waves-effect waves-purple">Favorites</button>
 
-    <!-- Modal Structure -->
-    <div id="modalFav" class="modal">
-      <div class="modal-content">
-        <h4>Favorites List</h4> 
+    <modal id="modalFav" class="modal">
+      <section class="modal-content">
+        <h4>Favorites List</h4>
         <ul id="favList" class="favItems"></ul>
-      </div>
-      <div class="modal-footer">
+      </section>
+      <section class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-      </div>
-    </div>
+      </section>
+    </modal>
   </section>
 
   <script src="materialize\js\materialize.min.js"></script>
